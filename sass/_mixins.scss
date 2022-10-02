@@ -1,0 +1,45 @@
+@use "variables" as v;
+
+@mixin sectionContainer {
+  background-color: v.$Dark-Blue;
+  width: 327px;
+  height: 364px;
+  border-radius: 16px;
+  margin: 155px auto;
+  padding: 24px;
+  @media (min-width: 900px) {
+    width: 412px;
+    height: 412px;
+    padding: 34px;
+  }
+}
+@mixin sectionIcon {
+  background-color: v.$Medium-Grey;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+  margin-bottom: 22px;
+  @media (min-width: 900px) {
+    width: 50px;
+    height: 50px;
+  }
+}
+@mixin sectionTitle {
+  color: v.$White;
+  margin-bottom: 22px;
+  font-size: 1.6em;
+  font-weight: 400;
+  @media (min-width: 900px) {
+    font-size: 1.9em;
+  }
+}
+@mixin sectionDescription {
+  color: v.$Light-Grey;
+  margin-bottom: 30px;
+  letter-spacing: -0.5px;
+  @media (min-width: 900px) {
+    font-size: 1.07em;
+  }
+}

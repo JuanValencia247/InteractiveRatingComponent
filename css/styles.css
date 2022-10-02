@@ -1,0 +1,196 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+  background-color: hsl(216deg, 12%, 8%);
+  font-size: 15px;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.main-container .section-container-s1 {
+  background-color: hsl(213deg, 19%, 18%);
+  width: 327px;
+  height: 364px;
+  border-radius: 16px;
+  margin: 155px auto;
+  padding: 24px;
+}
+@media (min-width: 900px) {
+  .main-container .section-container-s1 {
+    width: 412px;
+    height: 412px;
+    padding: 34px;
+  }
+}
+.main-container .section-container-s1__icon-container {
+  background-color: hsl(216deg, 12%, 24%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+  margin-bottom: 22px;
+}
+@media (min-width: 900px) {
+  .main-container .section-container-s1__icon-container {
+    width: 50px;
+    height: 50px;
+  }
+}
+.main-container .section-container-s1__title {
+  color: hsl(0deg, 0%, 100%);
+  margin-bottom: 22px;
+  font-size: 1.6em;
+  font-weight: 400;
+}
+@media (min-width: 900px) {
+  .main-container .section-container-s1__title {
+    font-size: 1.9em;
+  }
+}
+.main-container .section-container-s1__description {
+  color: hsl(217deg, 12%, 63%);
+  margin-bottom: 30px;
+  letter-spacing: -0.5px;
+}
+@media (min-width: 900px) {
+  .main-container .section-container-s1__description {
+    font-size: 1.07em;
+  }
+}
+.main-container .section-container-s1__number {
+  display: flex;
+  justify-content: space-between;
+}
+.main-container .section-container-s1__number-n {
+  background-color: hsl(216deg, 12%, 24%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: grid;
+  place-content: center;
+  margin-bottom: 22px;
+  color: hsl(217deg, 12%, 63%);
+  border: none;
+  transition: 300ms;
+}
+@media (min-width: 900px) {
+  .main-container .section-container-s1__number-n {
+    width: 50px;
+    height: 50px;
+  }
+}
+.main-container .section-container-s1__number-n:hover {
+  cursor: pointer;
+  background-color: hsl(217deg, 12%, 63%);
+  color: hsl(0deg, 0%, 100%);
+  transition: 300ms;
+}
+.main-container .section-container-s1__number-n:focus {
+  cursor: pointer;
+  background-color: hsl(25deg, 97%, 53%);
+  color: hsl(0deg, 0%, 100%);
+  transition: 300ms;
+}
+.main-container .section-container-s1__button {
+  width: 100%;
+  height: 44px;
+  border-radius: 50px;
+  border: none;
+  background-color: hsl(25deg, 97%, 53%);
+  text-transform: uppercase;
+  color: hsl(0deg, 0%, 100%);
+  font-weight: 700;
+  letter-spacing: 3px;
+  transition: 300ms;
+}
+.main-container .section-container-s1__button:hover {
+  color: hsl(25deg, 97%, 53%);
+  background-color: hsl(0deg, 0%, 100%);
+  cursor: pointer;
+  transition: 300ms;
+}
+.main-container .section-container-s2 {
+  background-color: hsl(213deg, 19%, 18%);
+  width: 327px;
+  height: 364px;
+  border-radius: 16px;
+  margin: 155px auto;
+  padding: 24px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 900px) {
+  .main-container .section-container-s2 {
+    width: 412px;
+    height: 412px;
+    padding: 34px;
+  }
+}
+.main-container .section-container-s2__img {
+  width: 150px;
+  margin-bottom: 24px;
+}
+.main-container .section-container-s2__result {
+  background-color: hsl(216deg, 12%, 24%);
+  width: 170px;
+  height: 36px;
+  border-radius: 50px;
+  color: hsl(25deg, 97%, 53%);
+  text-align: center;
+  padding: 8px 0;
+  margin-bottom: 30px;
+  font-size: 0.9em;
+}
+.main-container .section-container-s2__title {
+  color: hsl(0deg, 0%, 100%);
+  margin-bottom: 22px;
+  font-size: 1.6em;
+  font-weight: 400;
+}
+@media (min-width: 900px) {
+  .main-container .section-container-s2__title {
+    font-size: 1.9em;
+  }
+}
+.main-container .section-container-s2__description {
+  color: hsl(217deg, 12%, 63%);
+  margin-bottom: 30px;
+  letter-spacing: -0.5px;
+  text-align: center;
+}
+@media (min-width: 900px) {
+  .main-container .section-container-s2__description {
+    font-size: 1.07em;
+  }
+}
+
+@media (min-width: 900px) {
+  .section-container-s2__result {
+    font-size: 1em;
+    width: 196px;
+  }
+}
+.attribution {
+  margin-bottom: 20px;
+  font-size: 14px;
+  text-align: center;
+  color: rgb(202, 202, 202);
+}
+
+.attribution a {
+  color: hsl(228deg, 45%, 44%);
+  text-decoration: none;
+}
+
+/*# sourceMappingURL=styles.css.map */
